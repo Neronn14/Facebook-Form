@@ -1,0 +1,650 @@
+@import url('https://v1.fontapi.ir/css/SFProDisplay:100;200;300;400;500;600;700;800;900');
+
+*{
+    box-sizing: border-box;
+    font-family: 'SFProDisplay', Arial, Helvetica, sans-serif !important;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.direction-column{
+  flex-direction: column;
+}
+
+.justify-content-end{
+    justify-content: end;
+}
+
+.align-content-center{
+    align-content: center;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.align-self-center{
+    align-self: center;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.container-fluid{
+    width: 100%;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+[class^="col-"], 
+[class*=" col-"]{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* 1/12 */
+.col-1{
+    width: calc(100%/12);
+}
+
+/* 2/12 */
+.col-2{
+    width: calc(100%/6);
+}
+
+/* 3/12 */
+.col-3{
+    width: calc(100%/4);
+}
+
+/* 4/12 */
+.col-4{
+    width: calc(100%/3);
+}
+
+/* 5/12 */
+.col-5{
+    width: calc(5*100%/12);
+}
+
+/* 6/12 */
+.col-6{
+    width: calc(100%/2);
+}
+
+/* 7/12 */
+.col-7{
+    width: calc(7*100%/12);
+}
+
+/* 8/12 */
+.col-8{
+    /* width: calc(8*100%/12); */
+    width: calc(2*100%/3);
+}
+
+/* 9/12 */
+.col-9{
+    /* width: calc(9*100%/12); */
+    width: calc(3*100%/4);
+}
+
+/* 10/12 */
+.col-10{
+    /* width: calc(10*100%/12); */
+    width: calc(5*100%/6);
+}
+
+/* 11/12 */
+.col-11{
+    width: calc(11*100%/12);
+}
+
+/* 12/12 */
+.col-12{
+    width: 100%;
+}
+
+.bg-gray{
+    background-color: #656767;
+}
+
+.bg-white{
+    background-color: #ddd;
+}
+
+.bg-red{
+    background-color: #db2147;
+}
+
+.bg-green{
+    background-color: #3FA20D;
+}
+
+.bg-blue{
+    background-color: blue;
+}
+
+.bg-darkblue{
+    background-color: #002775;
+}
+
+.bg-black{
+    background-color: #111;
+}
+
+.bg-orange{
+    background-color: #E89B02;
+}
+
+
+body{
+    background: #f0f2f5;
+    line-height: 1.34;
+    direction: ltr;
+    /* overflow-y: scroll; */
+    min-height: 817px;
+}
+
+.form__input{
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+/* signup */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100%; */
+  min-height: 100%;
+  /* height: 600px; */
+  background-color: rgba(255, 255, 255, .8);
+  display: grid;
+  place-items: center;
+  transition: var(--transition);
+  visibility: hidden;
+  z-index: -10;
+  /* overflow-y: scroll; */
+}
+
+.open-modal {
+    visibility: visible;
+    z-index: 10;
+  }
+
+
+
+.signup-card{
+    width: 435px;
+    height: 34rem;
+    padding: 10px 16px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 40px auto;
+    box-shadow: 0 0 20px 7px rgba(211, 211, 211, .75);
+}
+
+.signup-card__header{
+    /* width: 125vh; */
+    padding: 1px 1px;
+    margin-bottom: 5px;
+    /* border-bottom: 0.5px solid #555; */
+    position: relative;
+}
+
+.signup-card__header .close-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* font-size: 25px;
+    font-weight: bold; */
+    width: 25px;
+    cursor: pointer;
+}
+
+.signup-card__header:after{
+    content: "";
+    border-bottom: 1px solid #ddd;
+    margin-top: 10px;
+    margin-left: -1.1rem;
+    width: 27.2rem;
+}
+
+.signup-card__header h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    line-height: 36px;
+    color: #1c1e21;
+}
+
+.signup-card__header span{
+    color: #606770;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+/* .card__header hr{
+    width: 27.3rem;
+    margin-left: -1.1rem;
+} */
+
+
+/* .card__body{
+    width: 125vh;
+    height: 150px;
+} */
+
+.signup-card__body .section-1 p{
+    margin: 10px 0;
+}
+
+.signup-card__body .signup-name,.signup-surname,.signup-email,.signup-password{
+    padding: 12px;
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 400;
+    background: #f5f6f7;
+}
+
+.signup-card__body .signup-name,.signup-surname{
+    width: 193px;
+}
+
+.signup-card__body .signup-surname{
+    margin-left: 10px;
+}
+
+.signup-card__body .signup-email,.signup-password{
+    width: 25rem;
+}
+
+.signup-card__body .day,.month,.year{
+    /* margin-top: 25px; */
+    width: 8rem;
+    height: 36px;
+    font-size: 15px;
+}
+
+.signup-card__body .month,.year{
+    margin-left: 5px;
+}
+
+.signup-card__body .gender{
+    display: flex;
+}
+
+.signup-card__body .title{
+    color: #606770;
+    font-size: 12px;
+    font-weight: 500;
+    /* line-height: 20px; */
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+
+.signup-card__body .title .icon-question{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    font-size: 10px;
+    border-radius: 50%;
+    background-color: #606770;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.signup-card__body .male,.female,.custom{
+    display: flex;
+    justify-content: space-between;
+    width: 8.2rem;
+    height: 35px;
+    align-items: center;
+    font-size: 15px;
+    /* margin-top: 25px; */
+}
+
+.signup-card__body .female,.custom{
+    margin-left: 10px;
+}
+
+.label{
+    margin-left: 6px;
+}
+
+.signup-card__footer .footer__text .text-1,.text-2 {
+    color: #777;
+    font-size: 11px;
+    margin: 1em 0;
+    text-decoration: none;
+}
+
+.signup-card__footer .footer__text a{
+    color: #385898;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* .section-2{
+    margin-top: 10px;
+}
+
+.section-3{
+    margin-top: 10px;
+} */
+
+.section-2,.section-3{
+    margin-top: 10px;
+}
+
+.signup-card__footer .signup-btn{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.signup-card__footer .signup-btn button{
+    height: 36px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #00a400;
+    box-shadow: none;
+    text-shadow: none;
+    padding: 0 32px;
+    overflow: hidden;
+    border: none;
+    border-radius: 6px;
+    /* line-height: 126%; */
+    font-weight: bold;
+    min-width: 194px;
+    cursor: pointer;
+
+}
+
+/* login */
+
+#login-section{
+    margin-top: 5rem;
+}
+
+/* .login,.login-card{
+    margin-top: 2rem;
+} */
+
+.logo{
+    width: 480px;
+    /* width: 30rem; */
+    margin-top: 6rem;
+    /* margin-left: 5rem */
+    margin-left: 95px;
+}
+
+
+.logo__name img{
+    width: 18.8rem;
+    margin-left: -28px;
+    margin-bottom: -3px;
+}
+
+.logo__text{
+    margin-top: -10px;
+    font-size: 28px;
+    width: auto;
+    line-height: 32px;
+    margin-left: -0.4px;
+    color: #1c1e21;
+}
+
+.login-card{
+    height: 350px;
+    width: 396px;
+    margin-top: 52px;
+    margin-left: 78px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+.login-card__header{
+    padding-top: 8px;
+    padding-left: 6px;
+    padding-bottom: 24px;
+}
+
+/* .login-card__header::after{
+    content: "";
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+    margin-left: -1.1rem;
+    width: 27.2rem;
+} */
+
+/* .login-card p{
+    position: relative;
+} */
+
+
+
+  
+
+.login-email,.login-password{
+    /* background: #FFFFFF url(/rsrc.php/v3/yU/r/O7nelmd9XSI.png) repeat-x; */
+    width: 364px;
+    /* height: 3.3rem; */
+    height: 52px;
+    /* opacity: 2; */
+    /* color: #111; */
+    border: 1px solid #dddfe2;
+    outline: none;
+    margin-left: 10px;
+    font-size: 17px;
+    padding-left: 16px;
+}
+
+.login-email{
+    margin-top: 8px;
+}
+
+.login-password{
+    margin-top: 12px;
+}
+
+
+.login-email::placeholder,.login-password::placeholder{
+    color: #999;
+    opacity: 1; 
+}
+
+.login-email:focus,.login-password:focus{
+    border-color: #1877f2;
+    box-shadow: 0 2px 4px #1877f2,;
+}
+
+
+.login-email:focus::placeholder{
+    color: #bbb;
+    opacity: 2; 
+}
+
+
+.login-password:focus::placeholder{
+    color: #bbb;
+    opacity: 2; 
+}
+
+
+
+/* .login-label-1{
+    position: absolute;
+    top: 23px;
+    left: 26.5px;
+    font-size: 17px;
+    color: #999;
+
+}
+
+.login-label-2{
+    position: absolute;
+    top: 27px;
+    left: 27px;
+    font-size: 17px;
+    color: #999;
+} */
+
+.login-btn button{
+    width: 364px;
+    /* height: 3.1rem; */
+    height: 48px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 16px;
+    color: #fff;
+    background-color: #1877f2;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.forgot{
+    text-align: center;
+    margin-top: 14px;
+    padding-right: 6px;
+}
+
+.forgot a{
+    text-decoration: none;
+    color: #1877f2;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.login-card__footer{
+    /* padding-top: 8px; */
+    padding-left: 6px;
+    /* padding-bottom: 24px; */
+    margin-top: -24px;
+    height: 99px;
+}
+
+/* .login-card__footer::before{
+    content: "";
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+    margin-left: -1.1rem;
+    width: 27.2rem;
+} */
+
+.border{
+    border-bottom: 1px solid #dadde1;
+    display: flex;
+    align-items: center;
+    margin: 20px 16px;
+}
+
+.new-account-btn{
+    text-align: center;
+}
+
+.new-account-btn button{
+    background-color: #42b72a;
+    color: #fff;
+    /* width: 195px;
+    height: 48px; */
+    line-height: 48px;
+    padding: 0 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 6px;
+    margin-right: 7px;
+    cursor: pointer;
+
+}
+
+.create-page{
+    font-size: 14px;
+    margin-top: 28px;
+    /* margin-left: 116px; */
+    text-align: center;
+    margin-right: 20px;
+    color: #1c1e21;
+
+}
+
+.create-page a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #1c1e21;
+}
+
+.alert{
+    background: transparent;
+    border-radius: 10px;
+    display: none;
+    width: 350px;
+}
+
+@media screen and (max-width: 768px){
+    .col-md-3{
+        width: 25%;
+    }
+    
+    .col-md-6{
+        width: 50%;
+    }
+    
+    .col-md-9{
+        width: 75%;
+    }
+
+    .col-md-12{
+        width: 100%;
+    }   
+    
+}
+
+@media screen and (max-width: 576px){
+    .col-sm-3{
+        width: 25%;
+    }
+    
+    .col-sm-6{
+        width: 50%;
+    }
+    
+    .col-sm-9{
+        width: 75%;
+    }
+
+    .col-sm-12{
+        width: 100%;
+    }   
+}
